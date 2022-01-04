@@ -14,6 +14,7 @@ namespace NewsPrint {
 
             printer.AlignCenter();
             printer.ExpandedMode("NACHRICHTEN");
+            printer.Append(DateTime.Now.ToString("G"));
             printer.AlignLeft();
 
             for(int i = 0; i < 5; i++){
